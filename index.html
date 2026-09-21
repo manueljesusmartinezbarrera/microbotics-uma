@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>microBotics UMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <!-- CABECERA FIJA Y BLOQUEADA -->
+    <header class="header">
+        <a href="index.html" class="logo-container">
+            <img src="logo.png" alt="microBotics Logo" class="logo-img">
+        </a>
+        
+        <!-- Botón de menú hamburguesa (3 rayas) -->
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="navLinks">
+            <a href="index.html">Inicio</a>
+            <a href="que-es-microbotics.html">Historia</a>
+            <a href="objetivo.html">Objetivo</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="#blog">Blog</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA (HERO) -->
+    <section class="hero">
+        <!-- Imagen para ordenador (horizontal) -->
+        <img src="microbotics-portada.jpg" alt="Portada microBotics" class="bg-image bg-desktop">
+        <!-- Imagen específica para móviles (vertical) -->
+        <img src="portada_vertical.jpg" alt="Portada microBotics Móvil" class="bg-image bg-mobile">
+        
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-text-block">
+                <h1>Ingeniería Robótica para</h1>
+                <div class="dynamic-title">
+                    <span class="typed-text"></span>
+                </div>
+            </div>
+            
+            <!-- Botón para abrir el pop-up -->
+            <button id="openModalBtn" class="btn-explore">Únete o Colabora ⟶</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PROYECTOS (Bloque 1) -->
+    <section class="projects-rows">
+        <div class="project-row">
+            <div class="project-text">
+                <div class="section-accent-line"></div>
+                <h3>¿Qué es microBotics?</h3>
+                <p>μBotics es una iniciativa universitaria dedicada a la investigación, diseño y desarrollo de micro robots capaces de operar en entornos donde la presencia humana resulta limitada o peligrosa.</p>
+                <a href="que-es-microbotics.html" class="btn-project">Saber más</a>
+            </div>
+            <div class="project-image">
+                <img src="collage2.png" alt="Iniciativa microBotics">
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: Nuestros Proyectos (3 tarjetas modulares) -->
+    <section class="modular-projects-section">
+        <div class="section-accent-line center-line"></div>
+        <h2 class="modular-section-title">Nuestros Proyectos</h2>
+        
+        <div class="modular-cards-container">
+            <!-- Tarjeta 1 -->
+            <div class="modular-card">
+                <div class="modular-img-box">
+                    <img src="proyecto-modular-1.jpg" alt="Módulo Robot 1">
+                </div>
+                <h3>Oruga-Bot</h3>
+                <p>Diseñado con un chasis compacto y tracción mediante orugas continuas, el Oruga-Bot ofrece máxima estabilidad y agarre en superficies irregulares.</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="modular-card">
+                <div class="modular-img-box">
+                    <img src="proyecto-modular-2.jpg" alt="Módulo Robot 2">
+                </div>
+                <h3>Mu-Bot</h3>
+                <p>Equipado con dos grandes ruedas laterales dentadas y un robusto chasis central, el Mu-Bot destaca por su agilidad y capacidad para superar obstáculos.</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="modular-card">
+                <div class="modular-img-box">
+                    <img src="proyecto-modular-3.jpg" alt="Módulo Robot 3">
+                </div>
+                <h3>Help Bot</h3>
+                <p>El núcleo de su funcionalidad reside en su "Módulo de Lógica Integrada," que cuenta con avanzados circuitos de computación y una cámara para el reconocimiento y la navegación.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PROYECTOS (Bloque 2: Nuestro Objetivo) -->
+    <section class="projects-rows">
+        <div class="project-row alt-row">
+            <div class="project-image">
+                <img src="proyecto2.jpg" alt="Nuestro Objetivo">
+            </div>
+            <div class="project-text">
+                <div class="section-accent-line"></div>
+                <h3>Nuestro Objetivo</h3>
+                <p>Desarrollar soluciones robóticas innovadoras que permitan la exploración y el mantenimiento de entornos difíciles o peligrosos para los humanos.</p>
+                <a href="objetivo.html" class="btn-project">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DEL BLOG CORPORATIVO (2 Posts) -->
+    <section class="blog-section" id="blog">
+        <div class="blog-header">
+            <div class="section-accent-line"></div>
+            <h2>El blog de microBotics</h2>
+            <p>Conoce toda la actualidad de microBotics UMA y del sector.</p>
+        </div>
+
+        <div class="blog-cards-container">
+            <!-- Post 1 -->
+            <article class="blog-card">
+                <div class="blog-img-box">
+                    <img src="talentland.max-500x500.jpg" alt="Talent Land 2025">
+                </div>
+                <div class="blog-content">
+                    <h3>Talent Land 2025</h3>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-card">
+                <div class="blog-img-box">
+                    <img src="robots.max-500x500.png" alt="Primeros prototipos">
+                </div>
+                <div class="blog-content">
+                    <h3>Primeros prototipos</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- VENTANA MODAL (POP-UP) -->
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-box">
+            <button id="closeModalBtn" class="close-btn">&times;</button>
+            
+            <div class="modal-header-text">
+                <h2>Únete o Colabora</h2>
+                <p>Forma parte del equipo de investigación o colabora en nuestros desarrollos robóticos.</p>
+            </div>
+
+            <!-- Formulario conectado a Formspree -->
+            <form id="popupForm" action="https://formspree.io/f/xoevjwya" method="POST">
+                <div class="input-group">
+                    <label>Nombre y Apellidos</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Correo Electrónico (UMA o personal)</label>
+                    <input type="email" name="email" placeholder="ejemplo@uma.es" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Área de interés</label>
+                    <select name="area" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="software">Desarrollo de Software / ROS</option>
+                        <option value="hardware">Diseño 3D / Hardware y Electrónica</option>
+                        <option value="externo">Colaboración externa / Empresa</option>
+                        <option value="otro">Otras consultas</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Cuéntanos sobre ti o tu propuesta</label>
+                    <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-modal-btn">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Librería Typed.js para el texto dinámico -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- PIE DE PÁGINA (FOOTER) CON LOGO E INSTAGRAM -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo-container">
+                <img src="logo.png" alt="microBotics Logo" class="footer-logo-img">
+            </a>
+            
+            <!-- Enlace con el logo de Instagram -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/micro_botics/" target="_blank" class="footer-insta-link">
+                    <img src="logo-insta.png" alt="Instagram microBotics" class="footer-insta-img">
+                </a>
+            </div>
+
+            <p class="footer-copy">© 2026 microBotics UMA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
